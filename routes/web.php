@@ -61,19 +61,12 @@ Route::get('/pegawai/data_riwayat_pendidikan/{nip}',[PegawaiController::class, '
 Route::get('/pegawai/data_riwayat_jabatan/{nip}',[PegawaiController::class, 'data_riwayat_jabatan']);
 Route::get('/pegawai/data_riwayat_skp/{nip}',[PegawaiController::class, 'data_riwayat_skp']);
 
-## Pegawai
-// Route::get('/pegawai/json',[PegawaiController::class, 'json']);
-// Route::get('/pegawai', [PegawaiController::class, 'index']);
-// Route::get('/pegawai/search', [PegawaiController::class, 'search']);
-// Route::get('/pegawai/create', [PegawaiController::class, 'create']);
-// Route::post('/pegawai', [PegawaiController::class, 'store']);
-// Route::get('/pegawai/edit/{pegawai}', [PegawaiController::class, 'edit']);
-// Route::put('/pegawai/edit/{pegawai}', [PegawaiController::class, 'update']);
-// Route::get('/pegawai/hapus/{pegawai}',[PegawaiController::class, 'delete']);
-
 ## Rekapitulasi
 Route::get('/rekapitulasi_golongan_pegawai', [RekapitulasiController::class, 'golongan_pegawai']);
 Route::get('/rekapitulasi_pendidikan_pegawai', [RekapitulasiController::class, 'pendidikan_pegawai']);
+Route::get('/rekapitulasi_esselon_pegawai', [RekapitulasiController::class, 'esselon_pegawai']);
+Route::get('/rekapitulasi_Jumlah_pegawai', [RekapitulasiController::class, 'Jumlah_pegawai']);
+Route::get('/rekapitulasi_gender_pegawai', [RekapitulasiController::class, 'gender_pegawai']);
 
 ## User
 Route::get('/user', [UserController::class, 'index']);

@@ -112,36 +112,36 @@
             <div class="collapsible-body">
                 <ul class="collapsible collapsible-sub" data-collapsible="accordion">
                     <li class="">
-                        <a class="" href="dashboard-modern.html">
+                        <a class="" href="{{ url('rekapitulasi_golongan_pegawai')}}">
                         <i class="material-icons">radio_button_unchecked</i>
                         <span data-i18n="Modern">Golongan Pegawai</span></a> 
                     </li>
                     <li>
-                        <a href="dashboard-ecommerce.html">
+                        <a href="{{ url('rekapitulasi_pendidikan_pegawai')}}">
                             <i class="material-icons">radio_button_unchecked</i>
                             <span data-i18n="eCommerce">Pendidikan Pegawai</span>
                         </a>
                     </li>
                     <li>
-                        <a href="dashboard-analytics.html">
+                        <a href="{{ url('rekapitulasi_esselon_pegawai')}}">
                             <i class="material-icons">radio_button_unchecked</i>
                             <span data-i18n="Analytics">Esselon Pegawai</span>
                         </a>
                     </li>
                     <li>
-                        <a href="dashboard-analytics.html">
+                        <a href="{{ url('rekapitulasi_jumlah_pegawai')}}">
                             <i class="material-icons">radio_button_unchecked</i>
                             <span data-i18n="Analytics">Jumlah Pegawai</span>
                         </a>
                     </li>
                     <li>
-                        <a href="dashboard-analytics.html">
+                        <a href="{{ url('rekapitulasi_jumlah_pegawai_opd')}}">
                             <i class="material-icons">radio_button_unchecked</i>
                             <span data-i18n="Analytics">Jumlah Pegawai Per OPD</span>
                         </a>
                     </li>
                     <li>
-                        <a href="dashboard-analytics.html">
+                        <a href="{{ url('rekapitulasi_gender_pegawai')}}">
                             <i class="material-icons">radio_button_unchecked</i>
                             <span data-i18n="Analytics">Gender Pegawai</span>
                         </a>
