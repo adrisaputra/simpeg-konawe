@@ -3,8 +3,12 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\DataUtamaController;
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\RiwayatOrangTuaController;
+use App\Http\Controllers\RiwayatPasanganController;
+use App\Http\Controllers\RiwayatGolonganController;
+use App\Http\Controllers\RiwayatPendidikanController;
+use App\Http\Controllers\RiwayatJabatanController;
 use App\Http\Controllers\RekapitulasiController;
 use App\Http\Controllers\LogController;
 use App\Http\Controllers\PengaturanController;
@@ -43,23 +47,22 @@ Route::get('/dashboard', [HomeController::class, 'index']);
 ## Pegawai
 Route::get('/pegawai', [PegawaiController::class, 'index']);
 Route::get('/pegawai/search', [PegawaiController::class, 'search']);
-Route::get('/pegawai/detail_data_utama/{data_utama}', [PegawaiController::class, 'detail_data_utama']);
-Route::get('/pegawai/detail_orang_tua/{data_utama}', [PegawaiController::class, 'detail_orang_tua']);
-Route::get('/pegawai/detail_pasangan/{data_utama}', [PegawaiController::class, 'detail_pasangan']);
-Route::get('/pegawai/detail_anak/{data_utama}', [PegawaiController::class, 'detail_anak']);
-Route::get('/pegawai/detail_riwayat_golongan/{data_utama}', [PegawaiController::class, 'detail_riwayat_golongan']);
-Route::get('/pegawai/detail_riwayat_pendidikan/{data_utama}', [PegawaiController::class, 'detail_riwayat_pendidikan']);
-Route::get('/pegawai/detail_riwayat_jabatan/{data_utama}', [PegawaiController::class, 'detail_riwayat_jabatan']);
-Route::get('/pegawai/detail_riwayat_skp/{data_utama}', [PegawaiController::class, 'detail_riwayat_skp']);
-Route::post('/pegawai/import_excel',[PegawaiController::class, 'import_excel']);
-Route::get('/pegawai/data_utama/{nip}',[PegawaiController::class, 'data_utama']);
-Route::get('/pegawai/data_orang_tua/{nip}',[PegawaiController::class, 'data_orang_tua']);
-Route::get('/pegawai/data_pasangan/{nip}',[PegawaiController::class, 'data_pasangan']);
-Route::get('/pegawai/data_anak/{nip}',[PegawaiController::class, 'data_anak']);
-Route::get('/pegawai/data_riwayat_golongan/{nip}',[PegawaiController::class, 'data_riwayat_golongan']);
-Route::get('/pegawai/data_riwayat_pendidikan/{nip}',[PegawaiController::class, 'data_riwayat_pendidikan']);
-Route::get('/pegawai/data_riwayat_jabatan/{nip}',[PegawaiController::class, 'data_riwayat_jabatan']);
-Route::get('/pegawai/data_riwayat_skp/{nip}',[PegawaiController::class, 'data_riwayat_skp']);
+Route::get('/pegawai/detail/{pegawai}', [PegawaiController::class, 'detail']);
+
+## Orang Tua
+Route::get('/riwayat_orang_tua/{pegawai}', [RiwayatOrangTuaController::class, 'index']);
+
+## Riwayat pasangan
+Route::get('/riwayat_pasangan/{pegawai}', [RiwayatPasanganController::class, 'index']);
+
+## Riwayat Golongan
+Route::get('/riwayat_golongan/{pegawai}', [RiwayatGolonganController::class, 'index']);
+
+## Riwayat Pendidikan
+Route::get('/riwayat_pendidikan/{pegawai}', [RiwayatPendidikanController::class, 'index']);
+
+## Riwayat jabatan
+Route::get('/riwayat_jabatan/{pegawai}', [RiwayatJabatanController::class, 'index']);
 
 ## Rekapitulasi
 Route::get('/rekapitulasi_golongan_pegawai', [RekapitulasiController::class, 'golongan_pegawai']);

@@ -183,7 +183,7 @@
 <a
    href="#"
    data-target="theme-cutomizer-out"
-   class="btn btn-customizer pink accent-2 white-text sidenav-trigger theme-cutomizer-trigger"
+   class="btn btn-customizer orange accent-2 white-text sidenav-trigger theme-cutomizer-trigger"
    ><i class="material-icons">settings</i></a
 >
 
@@ -413,7 +413,7 @@
    </div>
 </div>
 <!--/ Theme Customizer -->
-
+<!-- 
 <a
    href="https://1.envato.market/materialize_admin"
    target="_blank"
@@ -421,13 +421,13 @@
    data-position="left"
    data-tooltip="Buy Now!"
    ><i class="material-icons">add_shopping_cart</i></a
->
+> -->
     
     <!-- BEGIN: Footer-->
 
     <footer class="page-footer footer footer-static footer-dark gradient-45deg-indigo-blue gradient-shadow navbar-border navbar-shadow">
       <div class="footer-copyright">
-        <div class="container"><span>&copy; 2020          <a href="http://themeforest.net/user/pixinvent/portfolio?ref=pixinvent" target="_blank">PIXINVENT</a> All rights reserved.</span><span class="right hide-on-small-only">Design and Developed by <a href="https://pixinvent.com/">PIXINVENT</a></span></div>
+        <div class="container"><span>&copy; {{ date('Y') }}          <a href="#" target="_blank">Technos Studio</a> All rights reserved.</span></div>
       </div>
     </footer>
 

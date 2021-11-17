@@ -78,13 +78,16 @@
 										<td>
 											<center>
 											<div class="col s12 m12 l12" style="display: block;padding-bottom:7px;padding-top:7px">
+												<a href="{{ url('/'.Request::segment(1).'/detail/'.$v->id ) }}" class="mb-12 btn waves-effect waves-light blue darken-1 btn-small btn-block">Data Utama</a>
+											</div>
+											<div class="col s12 m12 l12" style="display: block;padding-bottom:7px;">
 												<a class="mb-12 btn waves-effect waves-light cyan darken-1 dropdown-settings btn-small btn-block" href="#!" data-target="dropdown1">
 													Data Keluarga<i class="material-icons right">arrow_drop_down</i>
 												</a>
 												<ul id="dropdown1" class="dropdown-content">
-													<li><a href="{{ url('/'.Request::segment(1).'/detail_orang_tua/'.$v->id ) }}" style="color: #607d8b;">Data Orang Tua</a></li>
-													<li><a href="{{ url('/'.Request::segment(1).'/detail_pasangan/'.$v->id ) }}" style="color: #607d8b;">Data Pasangan</a></li>
-													<li><a href="{{ url('/'.Request::segment(1).'/detail_anak/'.$v->id ) }}" style="color: #607d8b;">Data Anak</a></li>
+													<li><a href="{{ url('/riwayat_orang_tua/'.$v->id ) }}" style="color: #607d8b;">Data Orang Tua</a></li>
+													<li><a href="{{ url('/riwayat_pasangan/'.$v->id ) }}" style="color: #607d8b;">Data Pasangan</a></li>
+													<li><a href="{{ url('/riwayat_anak/'.$v->id ) }}" style="color: #607d8b;">Data Anak</a></li>
 												</ul>
 											</div>
 											<div class="col s12 m12 l12">
@@ -92,10 +95,10 @@
 													Data Riwayat<i class="material-icons right">arrow_drop_down</i>
 												</a>
 												<ul id="dropdown2" class="dropdown-content">
-													<li><a href="{{ url('/'.Request::segment(1).'/detail_riwayat_golongan/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat Golongan</a></li>
-													<li><a href="{{ url('/'.Request::segment(1).'/detail_riwayat_pendidikan/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat Pendidikan</a></li>
-													<li><a href="{{ url('/'.Request::segment(1).'/detail_riwayat_jabatan/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat Jabatan</a></li>
-													<li><a href="{{ url('/'.Request::segment(1).'/detail_riwayat_skp/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat SKP</a></li>
+													<li><a href="{{ url('/riwayat_golongan/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat Golongan</a></li>
+													<li><a href="{{ url('/riwayat_pendidikan/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat Pendidikan</a></li>
+													<li><a href="{{ url('/riwayat_jabatan/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat Jabatan</a></li>
+													<li><a href="{{ url('/riwayat_skp/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat SKP</a></li>
 												</ul>
 											</div>
 											</center>
