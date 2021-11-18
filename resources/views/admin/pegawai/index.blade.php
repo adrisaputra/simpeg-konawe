@@ -95,9 +95,16 @@
 													Data Riwayat<i class="material-icons right">arrow_drop_down</i>
 												</a>
 												<ul id="dropdown2" class="dropdown-content">
+													<li><a href="{{ url('/riwayat_angka_kredit/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat Angka Kredit</a></li>
+													<li><a href="{{ url('/riwayat_dp3/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat DP3</a></li>
+													<li><a href="{{ url('/riwayat_diklat/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat Diklat</a></li>
 													<li><a href="{{ url('/riwayat_golongan/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat Golongan</a></li>
-													<li><a href="{{ url('/riwayat_pendidikan/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat Pendidikan</a></li>
 													<li><a href="{{ url('/riwayat_jabatan/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat Jabatan</a></li>
+													<li><a href="{{ url('/riwayat_kursus/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat Kursus</a></li>
+													<li><a href="{{ url('/riwayat_pendidikan/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat Pendidikan</a></li>
+													<li><a href="{{ url('/riwayat_penghargaan/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat Penghargaan</a></li>
+													<li><a href="{{ url('/riwayat_pindah_instansi/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat Pindah Instansi</a></li>
+													<li><a href="{{ url('/riwayat_pns_unor/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat PNS Unor</a></li>
 													<li><a href="{{ url('/riwayat_skp/'.$v->id ) }}" style="color: #607d8b;">Data Riwayat SKP</a></li>
 												</ul>
 											</div>

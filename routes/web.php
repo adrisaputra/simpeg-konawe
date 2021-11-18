@@ -6,6 +6,9 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\RiwayatOrangTuaController;
 use App\Http\Controllers\RiwayatPasanganController;
+use App\Http\Controllers\RiwayatAngkaKreditController;
+use App\Http\Controllers\RiwayatDiklatController;
+use App\Http\Controllers\RiwayatDp3Controller;
 use App\Http\Controllers\RiwayatGolonganController;
 use App\Http\Controllers\RiwayatPendidikanController;
 use App\Http\Controllers\RiwayatJabatanController;
@@ -54,6 +57,15 @@ Route::get('/riwayat_orang_tua/{pegawai}', [RiwayatOrangTuaController::class, 'i
 
 ## Riwayat pasangan
 Route::get('/riwayat_pasangan/{pegawai}', [RiwayatPasanganController::class, 'index']);
+
+## Riwayat Angka Kredit
+Route::get('/riwayat_angka_kredit/{pegawai}', [RiwayatAngkaKreditController::class, 'index']);
+
+## Riwayat Diklat
+Route::get('/riwayat_diklat/{pegawai}', [RiwayatDiklatController::class, 'index']);
+
+## Riwayat DP3
+Route::get('/riwayat_dp3/{pegawai}', [RiwayatDp3Controller::class, 'index']);
 
 ## Riwayat Golongan
 Route::get('/riwayat_golongan/{pegawai}', [RiwayatGolonganController::class, 'index']);
