@@ -147,7 +147,7 @@
 				</div>
 				</div>
 			</div>
-			<div style="bottom: 20px; right: 19px;" class="fixed-action-btn direction-top">
+			<div style="bottom: 90px; right: 19px;" class="fixed-action-btn direction-top">
 				<a href="{{ url()->previous() }}" class="btn-floating btn-large waves-effect waves-light red darken-2"><i class="material-icons">arrow_back</i></a>
 			</div>
           </div>

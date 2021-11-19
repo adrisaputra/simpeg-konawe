@@ -79,18 +79,25 @@ class UserController extends Controller
         if($request->group==2){
             if($request->password){
                 $this->validate($request, [
-                    'password' => 'required|string|min:8|confirmed'
-                ]);
-            } 
-        } else {
-            if($request->password){
-                $this->validate($request, [
-                    'name' => 'required|string|max:255',
+                    'email' => 'required|string|email|max:255|unique:users',
                     'password' => 'required|string|min:8|confirmed'
                 ]);
             } else {
                 $this->validate($request, [
-                    'name' => 'required|string|max:255'
+                    'email' => 'required|string|email|max:255'
+                ]);
+            }
+        } else {
+            if($request->password){
+                $this->validate($request, [
+                    'name' => 'required|string|max:255',
+                    'email' => 'required|string|email|max:255|unique:users',
+                    'password' => 'required|string|min:8|confirmed'
+                ]);
+            } else {
+                $this->validate($request, [
+                    'name' => 'required|string|max:255',
+                    'email' => 'required|string|email|max:255|unique:users'
                 ]);
             }
         }

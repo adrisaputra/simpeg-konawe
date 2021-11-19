@@ -152,13 +152,13 @@
         
         <li class="navigation-header"><a class="navigation-header-text">Pengaturan</a><i class="navigation-header-icon material-icons">more_horiz</i></li>
         <li class="bold {{ (request()->is('log*')) ? 'active' : '' }}">
-           <a class="waves-effect waves-cyan {{ (request()->is('log*')) ? 'active' : '' }}" href="app-email.html">
+           <a class="waves-effect waves-cyan {{ (request()->is('log*')) ? 'active gradient-45deg-indigo-blue gradient-shadow' : '' }}" href="{{ url('log') }}">
               <i class="fa fa-clock"></i>
               <span class="menu-title" data-i18n="Mail">Log Activity</span>
             </a>
          </li>
         <li class="bold {{ (request()->is('user*')) ? 'active' : '' }}">
-           <a class="waves-effect waves-cyan {{ (request()->is('user*')) ? 'active' : '' }}" href="app-chat.html">
+           <a class="waves-effect waves-cyan {{ (request()->is('user*')) ? 'active gradient-45deg-indigo-blue gradient-shadow' : '' }}" href="{{ url('user') }}">
               <i class="material-icons">person_outline</i>
               <span class="menu-title" data-i18n="Chat">User</span>
             </a>

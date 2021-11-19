@@ -7022,9 +7022,11 @@ button.btn-floating
 .btn-small
 {
     font-size: 1rem;
-    line-height: 32.4px;
+    line-height: 27px;
+    height: 27px;
+    /* line-height: 32.4px; */
 
-    height: 32.4px;
+    /* height: 32.4px; */
 }
 
 .btn-small i

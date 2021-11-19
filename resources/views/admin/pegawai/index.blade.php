@@ -126,9 +126,9 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div style="bottom: 90px; right: 19px;" class="fixed-action-btn direction-top">
-				<a class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow"><i class="material-icons">add</i></a>
-			</div> -->
+			<div style="bottom: 90px; right: 19px;" class="fixed-action-btn direction-top">
+				<a href="{{ url('/'.Request::segment(1)) }}" class="btn-floating btn-large waves-effect waves-light orange darken-2"><i class="material-icons">refresh</i></a>
+			</div>
           </div>
           <div class="content-overlay"></div>
         </div>
